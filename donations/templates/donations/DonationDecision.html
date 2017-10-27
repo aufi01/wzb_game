@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    DonationDecision
+{% endblock %}
+
+{% block content %}
+    <p>Your endowment is {{ Constants.endowment }}</p>
+    <p> You have the chance to donate part of your endowment to the SOS childrens village.</p>
+    {% formfield player.donation %}
+    {% if player.treatment == "richkid" %}
+        <img src="{% static "donations/richkid.jpg" %}">
+    {% else %}
+        <img src="{% static "donations/poorkid.jpg" %}">
+    {% endif %}
+    {% next_button %}
+{% endblock %}
