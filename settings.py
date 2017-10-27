@@ -102,7 +102,7 @@ SESSION_CONFIG_DEFAULTS = {
 SESSION_CONFIGS = [
     {
         'name': 'donations',
-        'display_name': 'Donations',
+        'display_name': 'Donations Game',
         'num_demo_participants': 2,
         'app_sequence': ['donations'],
     }
