@@ -103,7 +103,7 @@ SESSION_CONFIGS = [
     {
         'name': 'donations',
         'display_name': 'Donations',
-        'num_demo_participants': 2,
+        'num_demo_participants': 10,
         'app_sequence': ['donations'],
     }
 ]
